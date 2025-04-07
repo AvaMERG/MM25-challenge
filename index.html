@@ -194,27 +194,19 @@
                     <h2 class="title is-3">Challenge Task Definition and Metrtics</h2>
                     <div class="content has-text-justified">
                         <div style="text-align: center;">
-                            <img src="static/images/task1.png" width="90%" alt="">
-                            <p><b>Task 1: Text-Only Empathetic Response Generation.</b></p>
-                        </div>
-                        <p>
-                            <b>Task-1:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating textual empathic responses, with each response being associated with a suitable emotional label. The evaluation of this subtask is the emotion prediction accuracy (Acc) and Distinct-n (Dist-1/2).
-                        </p>
-                        
-                        <div style="text-align: center;">
                             <img src="static/images/task2.png" width="90%" alt="">
-                            <p><b>Task 2: Multimodal-Aware Empathetic Response Generation.</b></p>
+                            <p><b>Task 1: Multimodal-Aware Empathetic Response Generation.</b></p>
                         </div>
                         <p>
-                            <b>Task-2:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating empathetic responses. The evaluation of this subtask is the emotion prediction accuracy (Acc) and Distinct-n (Dist-1/2).
+                            <b>Task-1:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating empathetic responses. 
                         <p>
                         
                         <div style="text-align: center;">
                             <img src="static/images/task3.png" width="90%" alt="">
-                            <p><b>Task 3: Multimodal Empathetic Response Generation.</b></p>
+                            <p><b>Task 2: Multimodal Empathetic Response Generation.</b></p>
                         </div>
                         <p>
-                            <b>Task-3:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating empathetic multimodal responses. The evaluation of this subtask is based on four metrics: emotion prediction accuracy (Acc), Fréchet Audio Distance (FAD) and Structural Similarity Index Measure (SSIM).
+                            <b>Task-2:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating empathetic multimodal responses. 
                         </p>
                         
                         <div class="columns is-centered has-text-centered">
@@ -223,12 +215,18 @@
                                 <div class="content has-text-justified">
                                     <p>
                           
-                                        For Subtask 1 and Subtask 2, we will rank the participants based on the Acc score. In case of a tie in Acc, the ranking will be determined by the Dist-1/2 scores. For Subtask 3, the ranking will be determined according to the following formula:
-                                         <p>
-                                          <b><em>Score = Acc + 0.8*SSIM + 0.3*FAD</em></b>
-                                         </p>
-
-                                          We provide python scripts for evaluation, please refer to the <a href="#baseline">baseline codes</a> "/challenge/evaluation.py".
+                                        To participate in the contest, you will submit the response text or response video. As you develop your model, you can evaluate your results use automated metrics such as  Distinct-n (Dist-1/2) for text and FID score for video.
+                                    </p>
+                                    <p>
+                                        After all submissions are uploaded, we will run a human-evaluation of all submitted response text and videos. Specifically, we will have human labelers compare all submitted videos to the reference videos. Labelers will evaluate videos on the following criteria:
+                                    </p>
+                                    <ol>
+                                        <li><strong>Empathy:</strong> How well the response shows understanding and compassion for the speaker’s emotions.</li>
+                                        <li><strong>Relevance:</strong> How relevant the response is to the input query or context.</li>
+                                        <li><strong>Multimodal Consistency:</strong> Whether the verbal, facial, and vocal expressions are consistent with each other.</li>
+                                        <li><strong>Naturalness:</strong> How natural and human-like the response appears.</li>
+                                    </ol>
+                                    If you are interested in participating in this challenge, please register by filling out the form at the following link: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrBjx4zarmGPMfz5DX36G7Qy3JD0j7j7-oq9uwdP5DLSPLWQ/viewform?usp=header">Google Form</a> 
                                 </div>
                             </div>
                         </div>
@@ -345,24 +343,24 @@
                               <td>15 Mar, 2025</td>
                             </tr>
                             <tr>
-                              <td>Evaluation deadline for all shared tasks</td>
-                              <td>XXX, 2025</td>
+                              <td>Test set release & Evaluation begin</td>
+                              <td>31 May, 2025</td>
                             </tr>
                             <tr>
-                                <td>Notification of all shared tasks</td>
-                                <td>XXX, 2025</td>
+                                <td>Evaluation end</td>
+                                <td>15 June, 2025</td>
                             </tr>
                             <tr>
-                                <td>Shared-task paper submission deadline</td>
-                                <td>XXX, 2025</td>
+                                <td>Paper invitation decision</td>
+                                <td>1 July, 2025</td>
                             </tr>
                             <tr>
                                 <td>Acceptance notification of shared-task papers</td>
-                                <td>XXX, 2025</td>
+                                <td>8 August, 2025</td>
                             </tr>
                             <tr>
                                 <td>Camera ready paper deadline</td>
-                                <td>XXX, 2025</td>
+                                <td>23 August, 2025</td>
                             </tr>
                             
 
@@ -381,19 +379,6 @@
 
 
 
-
-
-            
-            <!-- / Paper video. -->
-            <div class="columns is-centered has-text-centered">
-                <div id="submission" class="column is-four-fifths">
-                    <h2 class="title is-3">Submission</h2>
-                    <div class="content has-text-justified">
-                        <p>
-                             Please sumbit predicted results with a json files "results.json".
-                        </p>
-                        
-                        <pre id="jsonShow">
 <!-- 
 [
 {
@@ -438,11 +423,11 @@
                             
                         
                         </p> -->
-
+<!-- 
                         <p> Comming Soon </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- / Paper video. -->
             <div class="columns is-centered has-text-centered">
