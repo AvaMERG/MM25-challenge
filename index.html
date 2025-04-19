@@ -99,10 +99,17 @@
                                     </a>
                                 </span>
 
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a href="https://www.codabench.org/competitions/4897/"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span>CodaBench</span>
+                                    </a>
+                                </span> -->
+
+                                <span class="link-block">
+                                    <a href="https://github.com/AvaMERG/AvaMERG-Pipeline"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Project</span>
                                     </a>
                                 </span>
                             </div>
@@ -114,6 +121,23 @@
         </div>
     </section>
 
+    <!-- News Section -->
+<!-- News Section -->
+<div id="news" class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">News & Updates</h2>
+      <div class="content has-text-centered"> 
+        <ul style="list-style-position: inside;">
+          <li>
+            <strong>🗓️ April 10, 2025:</strong> Official registration form is now open. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrBjx4zarmGPMfz5DX36G7Qy3JD0j7j7-oq9uwdP5DLSPLWQ/viewform?usp=header" target="_blank">Register here</a>.
+          </li>
+          <li>
+            <strong>🆕 March 25, 2025:</strong> The training data has been publicly released.<a href="https://huggingface.co/datasets/ZhangHanXD/AvaMERG">Hugging Face</a> and <a href="https://pan.baidu.com/s/1flf2ZOfRAnEqPcSUUBJnMg?pwd=ih5n ">Baidu Drive</a>.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
     <section class="section"style="margin-top: -50px;">
@@ -189,9 +213,9 @@
             <!--/ Abstract. -->
 
             <!-- Paper video. -->
-            <div id="task" div class="columns is-centered has-text-centered">
+            <div id="task" class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Challenge Task Definition and Metrtics</h2>
+                    <h2 class="title is-3">Challenge Task Definition</h2>
                     <div class="content has-text-justified">
                         <div style="text-align: center;">
                             <img src="static/images/task2.png" width="90%" alt="">
@@ -209,32 +233,34 @@
                             <b>Task-2:</b> Participants are required to develop a model capable of processing multimodal dialogue contexts and generating empathetic multimodal responses. 
                         </p>
                         
-                        <div class="columns is-centered has-text-centered">
-                            <div>
-                                <h2 class="title is-3">Evaluation</h2>
-                                <div class="content has-text-justified">
-                                    <p>
-                          
-                                        To participate in the contest, you will submit the response text or response video. As you develop your model, you can evaluate your results use automated metrics such as  Distinct-n (Dist-1/2) for text and FID score for video.
-                                    </p>
-                                    <p>
-                                        After all submissions are uploaded, we will run a human-evaluation of all submitted response text and videos. Specifically, we will have human labelers compare all submitted videos to the reference videos. Labelers will evaluate videos on the following criteria:
-                                    </p>
-                                    <ol>
-                                        <li><strong>Empathy:</strong> How well the response shows understanding and compassion for the speaker’s emotions.</li>
-                                        <li><strong>Relevance:</strong> How relevant the response is to the input query or context.</li>
-                                        <li><strong>Multimodal Consistency:</strong> Whether the verbal, facial, and vocal expressions are consistent with each other.</li>
-                                        <li><strong>Naturalness:</strong> How natural and human-like the response appears.</li>
-                                    </ol>
-                                    If you are interested in participating in this challenge, please register by filling out the form at the following link: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrBjx4zarmGPMfz5DX36G7Qy3JD0j7j7-oq9uwdP5DLSPLWQ/viewform?usp=header">Google Form</a> 
-                                </div>
                             </div>
                         </div>
+                    </div>
 
+            <div id="submission" class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Submission</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            To participate in the contest, you will submit the response text or response video. As you develop your model, you can evaluate your results use automated metrics such as  Distinct-n (Dist-1/2) for text and FID score for video.
+                        </p>
+                        <p>
+                            After all submissions are uploaded, we will run a human-evaluation of all submitted response text and videos. Specifically, we will have human labelers compare all submitted videos to the reference videos. Labelers will evaluate videos on the following criteria:
+                        </p>
+                        <ol>
+                            <li><strong>Empathy:</strong> How well the response shows understanding and compassion for the speaker’s emotions.</li>
+                            <li><strong>Relevance:</strong> How relevant the response is to the input query or context.</li>
+                            <li><strong>Multimodal Consistency:</strong> Whether the verbal, facial, and vocal expressions are consistent with each other.</li>
+                            <li><strong>Naturalness:</strong> How natural and human-like the response appears.</li>
+                        </ol>
+                        <p>
+                        If you are interested in participating in this challenge, please register by filling out the form at the following link: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrBjx4zarmGPMfz5DX36G7Qy3JD0j7j7-oq9uwdP5DLSPLWQ/viewform?usp=header">Google Form</a> 
+                        </p>
+                    </div>
                         
                     </div>
                 </div>
-            </div>
+ 
              <!-- Datasets. -->
             <div class="columns is-centered has-text-centered">
                 <div id="dataset" class="column is-four-fifths">
@@ -243,7 +269,9 @@
                         <p>
                             The dataset for this challenge is derived from AvaMERG. It is a benchmark dataset for Avatar-based Multimodal Empathetic Response Generation. AvaMERG extended the original Empathetic Dialogue dataset by considering multimodal response. 
                         </p>
-
+                        <p>
+                            The datasets (audio/video) have been avaliable on <a href="https://huggingface.co/datasets/ZhangHanXD/AvaMERG">Hugging Face</a> and <a href="https://pan.baidu.com/s/1flf2ZOfRAnEqPcSUUBJnMg?pwd=ih5n ">Baidu Drive</a>.
+                        </p>
                         <p>
                             Statistics of AvaMERG are shown in the following table.
                         </p>
@@ -319,9 +347,6 @@
         }
     ]
 },</pre>
-                        <p>
-                            The datasets (audio/video) have been avaliable on <a href="https://huggingface.co/datasets/ZhangHanXD/AvaMERG">Hugging Face</a> and <a href="https://pan.baidu.com/s/1flf2ZOfRAnEqPcSUUBJnMg?pwd=ih5n ">Baidu Drive</a>.
-                        </p>
 
                     </div>
                 </div>
